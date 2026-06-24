@@ -1,10 +1,12 @@
 🧪 Overview
+
 QSAR-Divination is a cheminformatics machine learning project that predicts the aqueous solubility of small molecules from their chemical structure.
 The goal is to build a full QSAR (Quantitative Structure–Activity Relationship) pipeline using RDKit descriptors and classical machine learning models.
 
 ---
 
 🎯 Objective
+
 Given a molecular structure (SMILES format), the model predicts a continuous property:
 - Aqueous solubility (logS)
 - More to come in the future...
@@ -13,6 +15,7 @@ This project demonstrates how molecular structure can be mapped into numerical f
 ---
 
 📊 Dataset
+
 The project uses the ESOL dataset, which contains:
 → SMILES strings of molecules
 → Experimental solubility values (logS)
@@ -21,6 +24,7 @@ Each molecule is represented as a data point for regression.
 ---
 
 ⚙️ Methodology
+
 1. Molecular Representation
 Molecules are processed using RDKit to generate numerical representations.
 
@@ -45,6 +49,7 @@ Model performance is evaluated using:
 --- 
 
 🔁 Workflow
+
 SMILES
   ↓
 RDKit processing
@@ -58,6 +63,7 @@ Predicted solubility (logS)
 ---
 
 🛠️ Installation
+
 Clone the repository and install dependencies:
 
 git clone https://github.com/<your-username>/QSAR-Divination.git
@@ -67,6 +73,7 @@ pip install -r requirements.txt
 ---
 
 🚀 Usage
+
 Run the main pipeline:
 python src/model.py
 Or explore the data and models in Jupyter notebooks:
